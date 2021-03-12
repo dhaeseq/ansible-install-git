@@ -8,6 +8,11 @@
     name: epel-release
     state: latest
 
+- name: add git
+  yum:
+    name: git
+    state: latest
+
 - name: get git repo
   git:
     repo: 'https://github.com/git/git.git'
@@ -72,8 +77,8 @@
 
 - name: add path
   blockinfile:
-    path: : /home/{{ ansible_ssh_user }}/.bash_profile
+    path: /home/{{ ansible_ssh_user }}/.bash_profile
     block: |
-      "PATH=$PATH:/usr/local/bin"
+      export PATH=$PATH:/usr/local/bin
   tags:
     - add_git_to_path

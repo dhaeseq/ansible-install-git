@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4ce6d857-cf30-4f13-8373-3a10153a6d6e" name="ansible-remote">
+        <fileTransfer accessType="SFTP" host="170.75.162.15" port="22" sshConfigId="88cd4e7a-77af-4a0f-bcc2-0adc8d82cbec" sshConfig="ansible-controller">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
